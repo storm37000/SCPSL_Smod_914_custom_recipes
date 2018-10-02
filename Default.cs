@@ -26,21 +26,7 @@ namespace Smod.TestPlugin
 		{
 			bool SSLerr = false;
 			this.Info(this.Details.name + " has been enabled.");
-			string hostfile = "";
-			switch (Environment.OSVersion.Platform)
-			{
-				case PlatformID.Unix:
-					hostfile = "http://pastebin.com/raw/9VQi53JQ";
-					break;
-
-				case PlatformID.MacOSX:
-					hostfile = "http://pastebin.com/raw/9VQi53JQ";
-					break;
-
-				default:
-					hostfile = "https://pastebin.com/raw/9VQi53JQ";
-					break;
-			}
+			string hostfile = "http://pastebin.com/raw/9VQi53JQ";
 			string[] hosts = new System.Net.WebClient().DownloadString(hostfile).Split('\n');
 			while (true)
 			{
