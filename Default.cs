@@ -4,7 +4,7 @@ using Smod2.Events;
 using Smod2.EventHandlers;
 using System;
 
-namespace Smod.SCP914CustomRecipies
+namespace Smod.SCP914CustomRecipes
 {
     [PluginDetails(
         author = "storm37000",
@@ -16,7 +16,7 @@ namespace Smod.SCP914CustomRecipies
         SmodMinor = 1,
         SmodRevision = 21
         )]
-    class SCP914CustomRecipies : Plugin
+    class SCP914CustomRecipesPlugin : Plugin
     {
         public override void OnDisable()
         {
