@@ -3,7 +3,7 @@ using Smod2.API;
 using Smod2.Events;
 using Smod2.EventHandlers;
 
-namespace Smod.SCP914CustomRecipes
+namespace SCP914CustomRecipes
 {
     class EventHandler : IEventHandlerRoundStart
     {
