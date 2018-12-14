@@ -7,10 +7,10 @@ namespace SCP914CustomRecipes
 {
     class EventHandler : IEventHandlerRoundStart
     {
-        private SCP914CustomRecipesPlugin plugin;
+        private Main plugin;
         private bool initialload = true;
 
-        public EventHandler(SCP914CustomRecipesPlugin plugin)
+        public EventHandler(Main plugin)
         {
             this.plugin = plugin;
         }
