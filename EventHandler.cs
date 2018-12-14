@@ -3,14 +3,14 @@ using Smod2.API;
 using Smod2.Events;
 using Smod2.EventHandlers;
 
-namespace Smod.TestPlugin
+namespace SCP914CustomRecipes
 {
     class EventHandler : IEventHandlerRoundStart
     {
-        private Plugin plugin;
+        private SCP914CustomRecipesPlugin plugin;
         private bool initialload = true;
 
-        public EventHandler(Plugin plugin)
+        public EventHandler(SCP914CustomRecipesPlugin plugin)
         {
             this.plugin = plugin;
         }

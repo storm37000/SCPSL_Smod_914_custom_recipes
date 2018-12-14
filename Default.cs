@@ -1,10 +1,10 @@
-﻿using Smod2;
+using Smod2;
 using Smod2.Attributes;
 using Smod2.Events;
 using Smod2.EventHandlers;
 using System;
 
-namespace Smod.TestPlugin
+namespace SCP914CustomRecipes
 {
     [PluginDetails(
         author = "storm37000",
@@ -14,9 +14,9 @@ namespace Smod.TestPlugin
         version = "1.0.3",
         SmodMajor = 3,
         SmodMinor = 1,
-        SmodRevision = 0
+        SmodRevision = 21
         )]
-    class Default : Plugin
+    class SCP914CustomRecipesPlugin : Plugin
     {
         public override void OnDisable()
         {
