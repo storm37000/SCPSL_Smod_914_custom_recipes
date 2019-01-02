@@ -5,22 +5,22 @@ using Smod2.EventHandlers;
 
 namespace SCP914CustomRecipes
 {
-    [PluginDetails(
-        author = "storm37000",
-        name = "Custom SCP 914 Item Recipies",
-        description = "Custom SCP-914 Item Recipies",
-        id = "s37k.custom914recip",
-        version = "1.0.4",
-        SmodMajor = 3,
-        SmodMinor = 1,
-        SmodRevision = 0
-        )]
-    class Main : Plugin
-    {
-        public override void OnDisable()
-        {
-            this.Info(this.Details.name + " has been disabled.");
-        }
+	[PluginDetails(
+		author = "storm37000",
+		name = "Custom SCP 914 Item Recipies",
+		description = "Custom SCP-914 Item Recipies",
+		id = "s37k.custom914recip",
+		version = "1.0.4",
+		SmodMajor = 3,
+		SmodMinor = 1,
+		SmodRevision = 0
+		)]
+	class Main : Plugin
+	{
+		public override void OnDisable()
+		{
+			this.Info(this.Details.name + " has been disabled.");
+		}
 		public override void OnEnable()
 		{
 			this.Info(this.Details.name + " has been enabled.");
@@ -58,8 +58,8 @@ namespace SCP914CustomRecipes
 		}
 
 		public override void Register()
-        {
-            this.AddEventHandler(typeof(IEventHandlerRoundStart), new EventHandler(this), Priority.Highest);
-        }
-    }
+		{
+			this.AddEventHandler(typeof(IEventHandlerRoundStart), new EventHandler(this), Priority.Highest);
+		}
+	}
 }
