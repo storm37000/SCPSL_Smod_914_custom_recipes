@@ -1,11 +1,10 @@
-﻿using Smod2;
-using Smod2.API;
+﻿using Smod2.API;
 using Smod2.Events;
 using Smod2.EventHandlers;
 
 namespace SCP914CustomRecipes
 {
-	class EventHandler : IEventHandlerRoundStart
+	class EventHandler : IEventHandlerWaitingForPlayers
 	{
 		private Main plugin;
 		private bool initialload = true;
@@ -15,7 +14,7 @@ namespace SCP914CustomRecipes
 			this.plugin = plugin;
 		}
 
-		public void OnRoundStart(RoundStartEvent ev)
+		public void OnWaitingForPlayers(WaitingForPlayersEvent ev)
 		{
 			if (initialload)
 			{

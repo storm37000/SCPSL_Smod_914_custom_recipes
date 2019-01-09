@@ -1,7 +1,5 @@
 using Smod2;
 using Smod2.Attributes;
-using Smod2.Events;
-using Smod2.EventHandlers;
 
 namespace SCP914CustomRecipes
 {
@@ -10,9 +8,9 @@ namespace SCP914CustomRecipes
 		name = "Custom SCP 914 Item Recipies",
 		description = "Custom SCP-914 Item Recipies",
 		id = "s37k.custom914recip",
-		version = "1.0.4",
+		version = "1.0.5",
 		SmodMajor = 3,
-		SmodMinor = 1,
+		SmodMinor = 2,
 		SmodRevision = 0
 		)]
 	class Main : Plugin
@@ -59,7 +57,7 @@ namespace SCP914CustomRecipes
 
 		public override void Register()
 		{
-			this.AddEventHandler(typeof(IEventHandlerRoundStart), new EventHandler(this), Priority.Highest);
+			this.AddEventHandlers(new EventHandler(this));
 		}
 	}
 }
