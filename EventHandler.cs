@@ -16,6 +16,11 @@ namespace SCP914CustomRecipes
 
 		public void OnWaitingForPlayers(WaitingForPlayersEvent ev)
 		{
+			if (!plugin.UpToDate)
+			{
+				plugin.outdatedmsg();
+			}
+
 			if (initialload)
 			{
 				ParseRecipies(0);
