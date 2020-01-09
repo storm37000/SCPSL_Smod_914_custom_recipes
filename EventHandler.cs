@@ -37,7 +37,7 @@ namespace SCP914CustomRecipes
 			}
 			else
 			{
-				string createText = "";
+				string createText = "THIS IS NOT THE CONFIG FILE, JUST A REFERENCE!" + System.Environment.NewLine;
 				for (byte index1 = 0; index1 < objectOfType.recipes.Length; ++index1) //item id
 				{
 					if (mode == 0) { createText = createText + "==== Recipe for: " + (ItemType)index1 + " ====" + System.Environment.NewLine; }
